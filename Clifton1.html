@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>克里夫顿优势测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>克里夫顿优势测试</h1>
+<p>克里夫顿优势定义了 34 个才干主题，并把它们归为四个领域：<br>
+    战略思维：分析、回顾、前瞻、理念、搜集、思维、学习、战略<br>
+    执行力：成就，统筹，信仰，公平，审慎，纪律，专注，责任，排难<br>
+    影响力：行动、统率、沟通、竞争、完美、自信、追求、取悦<br>
+    关系建立：适应、关联、伯乐、体谅、和谐、包容、个别、积极、交往</p>
+<form id="strengthsForm">
+    <!-- Generate question sections dynamically here -->
+    <!-- Example for one theme -->
+    <!-- 1.战略思维 -->
+    <div class="question">
+        <h3>分析</h3>
+        <input type="radio" id="analysis-A" name="分析" value="我善于识别数据中的趋势。">
+        <label for="analysis-A">我善于识别数据中的趋势。</label><br>
+        <input type="radio" id="analysis-B" name="分析" value="我能从复杂数据中提取关键信息。">
+        <label for="analysis-B">我能从复杂数据中提取关键信息。</label><br>
+        <input type="radio" id="analysis-C" name="分析" value="我精于利用数据分析解决商业问题。">
+        <label for="analysis-C">我精于利用数据分析解决商业问题。</label>
+    </div>
+    <div class="question">
+        <h3>回顾</h3>
+        <input type="radio" id="review-A" name="回顾" value="我经常反思过去的经验。">
+        <label for="review-A">我经常反思过去的经验。</label><br>
+        <input type="radio" id="review-B" name="回顾" value="我从历史中找到改进现状的线索。">
+        <label for="review-B">我从历史中找到改进现状的线索。</label><br>
+        <input type="radio" id="review-C" name="回顾" value="我用过去的教训来指导未来的决策。">
+        <label for="review-C">我用过去的教训来指导未来的决策。</label>
+    </div>
+    <div class="question">
+        <h3>前瞻</h3>
+        <input type="radio" id="foresight-A" name="前瞻" value="我关注即将来临的机会。">
+        <label for="foresight-A">我关注即将来临的机会。</label><br>
+        <input type="radio" id="foresight-B" name="前瞻" value="我能预测和规划未来可能的变化。">
+        <label for="foresight-B">我能预测和规划未来可能的变化。</label><br>
+        <input type="radio" id="foresight-C" name="前瞻" value="我为未来的挑战和机遇制定策略。">
+        <label for="foresight-C">我为未来的挑战和机遇制定策略。</label>
+    </div>
+    <div class="question">
+        <h3>理念</h3>
+        <input type="radio" id="ideology-A" name="理念" value="我常思考抽象的理念。">
+        <label for="ideology-A">我常思考抽象的理念。</label><br>
+        <input type="radio" id="ideology-B" name="理念" value="我能将复杂理念转化为易懂的模型。">
+        <label for="ideology-B">我能将复杂理念转化为易懂的模型。</label><br>
+        <input type="radio" id="ideology-C" name="理念" value="我用创新的理念影响他人的思维。">
+        <label for="ideology-C">我用创新的理念影响他人的思维。</label>
+    </div>
+    <div class="question">
+        <h3>搜集</h3>
+        <input type="radio" id="collecting-A" name="搜集" value="我擅长收集必要的信息。">
+        <label for="collecting-A">我擅长收集必要的信息。</label><br>
+        <input type="radio" id="collecting-B" name="搜集" value="我从多种渠道搜集深入的资料。">
+        <label for="collecting-B">我从多种渠道搜集深入的资料。</label><br>
+        <input type="radio" id="collecting-C" name="搜集" value="我为决策搜集和分析全面的数据。">
+        <label for="collecting-C">我为决策搜集和分析全面的数据。</label>
+    </div>
+    <div class="question">
+        <h3>思维</h3>
+        <input type="radio" id="thinking-A" name="思维" value="我常进行深度思考。">
+        <label for="thinking-A">我常进行深度思考。</label><br>
+        <input type="radio" id="thinking-B" name="思维" value="我喜欢探索问题的多种可能性。">
+        <label for="thinking-B">我喜欢探索问题的多种可能性。</label><br>
+        <input type="radio" id="thinking-C" name="思维" value="我通过复杂的思考过程解决问题。">
+        <label for="thinking-C">我通过复杂的思考过程解决问题。</label>
+    </div>
+    <div class="question">
+        <h3>学习</h3>
+        <input type="radio" id="learning-A" name="学习" value="我喜欢学习新事物。">
+        <label for="learning-A">我喜欢学习新事物。</label><br>
+        <input type="radio" id="learning-B" name="学习" value="我通过持续学习来增强我的知识库。">
+        <label for="learning-B">我通过持续学习来增强我的知识库。</label><br>
+        <input type="radio" id="learning-C" name="学习" value="我将学习融入日常生活，以不断进步。">
+        <label for="learning-C">我将学习融入日常生活，以不断进步。</label>
+    </div>
+    <div class="question">
+        <h3>战略</h3>
+        <input type="radio" id="strategy-A" name="战略" value="我能识别长期目标的优先级。">
+        <label for="strategy-A">我能识别长期目标的优先级。</label><br>
+        <input type="radio" id="strategy-B" name="战略" value="我制定有效策略以优化资源利用。">
+        <label for="strategy-B">我制定有效策略以优化资源利用。</label><br>
+        <input type="radio" id="strategy-C" name="战略" value="我引导团队按照明确的战略方向前进。">
+        <label for="strategy-C">我引导团队按照明确的战略方向前进。</label>
+    </div>
+    <!-- 2.执行力 -->
+    <div class="question">
+        <h3>成就</h3>
+        <input type="radio" id="achievement-A" name="成就" value="我为完成任务感到自豪。">
+        <label for="achievement-A">我为完成任务感到自豪。</label><br>
+        <input type="radio" id="achievement-B" name="成就" value="我追求高效率和高成效。">
+        <label for="achievement-B">我追求高效率和高成效。</label><br>
+        <input type="radio" id="achievement-C" name="成就" value="我致力于超越常规标准，实现卓越。">
+        <label for="achievement-C">我致力于超越常规标准，实现卓越。</label>
+    </div>
+    <div class="question">
+        <h3>统筹</h3>
+        <input type="radio" id="coordination-A" name="统筹" value="我有效管理我的时间和资源。">
+        <label for="coordination-A">我有效管理我的时间和资源。</label><br>
+        <input type="radio" id="coordination-B" name="统筹" value="我协调多个项目确保顺利进行。">
+        <label for="coordination-B">我协调多个项目确保顺利进行。</label><br>
+        <input type="radio" id="coordination-C" name="统筹" value="我优化流程以提高团队效率。">
+        <label for="coordination-C">我优化流程以提高团队效率。</label>
+    </div>
+    <div class="question">
+        <h3>信仰</h3>
+        <input type="radio" id="faith-A" name="信仰" value="我坚持自己的信仰和价值观。">
+        <label for="faith-A">我坚持自己的信仰和价值观。</label><br>
+        <input type="radio" id="faith-B" name="信仰" value="我的决策反映了我的信仰深度。">
+        <label for="faith-B">我的决策反映了我的信仰深度。</label><br>
+        <input type="radio" id="faith-C" name="信仰" value="我在工作和生活中秉承我的信念。">
+        <label for="faith-C">我在工作和生活中秉承我的信念。</label>
+    </div>
+    <div class="question">
+        <h3>公平</h3>
+        <input type="radio" id="fairness-A" name="公平" value="我在决策中考虑所有人的利益。">
+        <label for="fairness-A">我在决策中考虑所有人的利益。</label><br>
+        <input type="radio" id="fairness-B" name="公平" value="我力求在团队中实现公正。">
+        <label for="fairness-B">我力求在团队中实现公正。</label><br>
+        <input type="radio" id="fairness-C" name="公平" value="我为维护正义和平等采取行动。">
+        <label for="fairness-C">我为维护正义和平等采取行动。</label>
+    </div>
+    <div class="question">
+        <h3>审慎</h3>
+        <input type="radio" id="prudence-A" name="审慎" value="我在决策前认真考虑所有后果。">
+        <label for="prudence-A">我在决策前认真考虑所有后果。</label><br>
+        <input type="radio" id="prudence-B" name="审慎" value="我评估各种方案来避免风险。">
+        <label for="prudence-B">我评估各种方案来避免风险。</label><br>
+        <input type="radio" id="prudence-C" name="审慎" value="我谨慎行事，以保证最佳结果。">
+        <label for="prudence-C">我谨慎行事，以保证最佳结果。</label>
+    </div>
+    <div class="question">
+        <h3>纪律</h3>
+        <input type="radio" id="discipline-A" name="纪律" value="我保持高度的组织和条理。">
+        <label for="discipline-A">我保持高度的组织和条理。</label><br>
+        <input type="radio" id="discipline-B" name="纪律" value="我遵守严格的时间表和规则。">
+        <label for="discipline-B">我遵守严格的时间表和规则。</label><br>
+        <input type="radio" id="discipline-C" name="纪律" value="我用严格的纪律推动自己和团队向前。">
+        <label for="discipline-C">我用严格的纪律推动自己和团队向前。</label>
+    </div>
+    <div class="question">
+        <h3>专注</h3>
+        <input type="radio" id="focus-A" name="专注" value="我集中精力完成当前任务。">
+        <label for="focus-A">我集中精力完成当前任务。</label><br>
+        <input type="radio" id="focus-B" name="专注" value="我排除干扰，保持高效工作。">
+        <label for="focus-B">我排除干扰，保持高效工作。</label><br>
+        <input type="radio" id="focus-C" name="专注" value="我全身心投入到达成目标中。">
+        <label for="focus-C">我全身心投入到达成目标中。</label>
+    </div>
+    <div class="question">
+        <h3>责任</h3>
+        <input type="radio" id="responsibility-A" name="责任" value="我对自己的行为负责。">
+        <label for="responsibility-A">我对自己的行为负责。</label><br>
+        <input type="radio" id="responsibility-B" name="责任" value="我承担起领导的责任和后果。">
+        <label for="responsibility-B">我承担起领导的责任和后果。</label><br>
+        <input type="radio" id="responsibility-C" name="责任" value="我确保个人和团队的承诺得到履行。">
+        <label for="responsibility-C">我确保个人和团队的承诺得到履行。</label>
+    </div>
+    <div class="question">
+        <h3>排难</h3>
+        <input type="radio" id="problem-solving-A" name="排难" value="我解决日常的小问题。">
+        <label for="problem-solving-A">我解决日常的小问题。</label><br>
+        <input type="radio" id="problem-solving-B" name="排难" value="我应对复杂挑战找到解决方案。">
+        <label for="problem-solving-B">我应对复杂挑战找到解决方案。</label><br>
+        <input type="radio" id="problem-solving-C" name="排难" value="我克服重大障碍，保证项目成功。">
+        <label for="problem-solving-C">我克服重大障碍，保证项目成功。</label>
+    </div>
+    <!-- 3.影响力 -->
+    <div class="question">
+        <h3>行动</h3>
+        <input type="radio" id="action-A" name="行动" value="我通过实际行动展示我的想法。">
+        <label for="action-A">我通过实际行动展示我的想法。</label><br>
+        <input type="radio" id="action-B" name="行动" value="我引领变革，通过行动激励他人。">
+        <label for="action-B">我引领变革，通过行动激励他人。</label><br>
+        <input type="radio" id="action-C" name="行动" value="我实践我的想法，有效推动项目进展。">
+        <label for="action-C">我实践我的想法，有效推动项目进展。</label>
+    </div>
+    <div class="question">
+        <h3>统率</h3>
+        <input type="radio" id="leadership-A" name="统率" value="我指导团队完成任务。">
+        <label for="leadership-A">我指导团队完成任务。</label><br>
+        <input type="radio" id="leadership-B" name="统率" value="我领导团队实现具体目标。">
+        <label for="leadership-B">我领导团队实现具体目标。</label><br>
+        <input type="radio" id="leadership-C" name="统率" value="我作为领导者，影响团队文化和成就。">
+        <label for="leadership-C">我作为领导者，影响团队文化和成就。</label>
+    </div>
+    <div class="question">
+        <h3>沟通</h3>
+        <input type="radio" id="communication-A" name="沟通" value="我清晰表达我的想法和计划。">
+        <label for="communication-A">我清晰表达我的想法和计划。</label><br>
+        <input type="radio" id="communication-B" name="沟通" value="我通过有效沟通增强团队合作。">
+        <label for="communication-B">我通过有效沟通增强团队合作。</label><br>
+        <input type="radio" id="communication-C" name="沟通" value="我是一个出色的沟通者，能影响广泛听众。">
+        <label for="communication-C">我是一个出色的沟通者，能影响广泛听众。</label>
+    </div>
+    <div class="question">
+        <h3>竞争</h3>
+        <input type="radio" id="competition-A" name="竞争" value="我享受竞争并力争胜出。">
+        <label for="competition-A">我享受竞争并力争胜出。</label><br>
+        <input type="radio" id="competition-B" name="竞争" value="我在竞争中寻找激励自己的方式。">
+        <label for="competition-B">我在竞争中寻找激励自己的方式。</label><br>
+        <input type="radio" id="competition-C" name="竞争" value="我把竞争视为提升自我和团队的机会。">
+        <label for="competition-C">我把竞争视为提升自我和团队的机会。</label>
+    </div>
+    <div class="question">
+        <h3>完美</h3>
+        <input type="radio" id="perfection-A" name="完美" value="我力求每项工作达到高标准。">
+        <label for="perfection-A">我力求每项工作达到高标准。</label><br>
+        <input type="radio" id="perfection-B" name="完美" value="我不断追求工作的完美执行。">
+        <label for="perfection-B">我不断追求工作的完美执行。</label><br>
+        <input type="radio" id="perfection-C" name="完美" value="我设定极高标准，不断推动自己追求卓越。">
+        <label for="perfection-C">我设定极高标准，不断推动自己追求卓越。</label>
+    </div>
+    <div class="question">
+        <h3>自信</h3>
+        <input type="radio" id="confidence-A" name="自信" value="我对自己的能力充满信心。">
+        <label for="confidence-A">我对自己的能力充满信心。</label><br>
+        <input type="radio" id="confidence-B" name="自信" value="我在面对挑战时展现自信。">
+        <label for="confidence-B">我在面对挑战时展现自信。</label><br>
+        <input type="radio" id="confidence-C" name="自信" value="我用自信影响他人，提升团队士气。">
+        <label for="confidence-C">我用自信影响他人，提升团队士气。</label>
+    </div>
+    <div class="question">
+        <h3>追求</h3>
+        <input type="radio" id="pursuit-A" name="追求" value="我设定并追求高目标。">
+        <label for="pursuit-A">我设定并追求高目标。</label><br>
+        <input type="radio" id="pursuit-B" name="追求" value="我不断追求职业和个人生活的进步。">
+        <label for="pursuit-B">我不断追求职业和个人生活的进步。</label><br>
+        <input type="radio" id="pursuit-C" name="追求" value="我为实现我的梦想不懈努力。">
+        <label for="pursuit-C">我为实现我的梦想不懈努力。</label>
+    </div>
+    <div class="question">
+        <h3>取悦</h3>
+        <input type="radio" id="pleasing-A" name="取悦" value="我努力让周围的人感到满意。">
+        <label for="pleasing-A">我努力让周围的人感到满意。</label><br>
+        <input type="radio" id="pleasing-B" name="取悦" value="我通过我的行为赢得他人的赞赏。">
+        <label for="pleasing-B">我通过我的行为赢得他人的赞赏。</label><br>
+        <input type="radio" id="pleasing-C" name="取悦" value="我在确保所有人都感到高兴和被尊重方面下了很大的功夫。">
+        <label for="pleasing-C">我在确保所有人都感到高兴和被尊重方面下了很大的功夫。</label>
+    </div>
+    <!-- 4.关系建立 -->
+    <div class="question">
+        <h3>适应</h3>
+        <input type="radio" id="adaptability-A" name="适应" value="我容易适应新环境和变化。">
+        <label for="adaptability-A">我容易适应新环境和变化。</label><br>
+        <input type="radio" id="adaptability-B" name="适应" value="我灵活应对各种情况。">
+        <label for="adaptability-B">我灵活应对各种情况。</label><br>
+        <input type="radio" id="adaptability-C" name="适应" value="我在变化中找到机会，帮助他人适应。">
+        <label for="adaptability-C">我在变化中找到机会，帮助他人适应。</label>
+    </div>
+    <div class="question">
+        <h3>关联</h3>
+        <input type="radio" id="connection-A" name="关联" value="我寻找和别人的共同点。">
+        <label for="connection-A">我寻找和别人的共同点。</label><br>
+        <input type="radio" id="connection-B" name="关联" value="我通过共同点建立强大的联系。">
+        <label for="connection-B">我通过共同点建立强大的联系。</label><br>
+        <input type="radio" id="connection-C" name="关联" value="我用共同的兴趣和目标联络人际关系。">
+        <label for="connection-C">我用共同的兴趣和目标联络人际关系。</label>
+    </div>
+    <div class="question">
+        <h3>伯乐</h3>
+        <input type="radio" id="talent-scout-A" name="伯乐" value="我识别他人的才能和潜力。">
+        <label for="talent-scout-A">我识别他人的才能和潜力。</label><br>
+        <input type="radio" id="talent-scout-B" name="伯乐" value="我帮助他人发展其职业道路。">
+        <label for="talent-scout-B">我帮助他人发展其职业道路。</label><br>
+        <input type="radio" id="talent-scout-C" name="伯乐" value="我激励和培养他人实现其最大潜能。">
+        <label for="talent-scout-C">我激励和培养他人实现其最大潜能。</label>
+    </div>
+    <div class="question">
+        <h3>体谅</h3>
+        <input type="radio" id="consideration-A" name="体谅" value="我理解并关心他人的感受。">
+        <label for="consideration-A">我理解并关心他人的感受。</label><br>
+        <input type="radio" id="consideration-B" name="体谅" value="我在团队中扮演调解者的角色。">
+        <label for="consideration-B">我在团队中扮演调解者的角色。</label><br>
+        <input type="radio" id="consideration-C" name="体谅" value="我通过同情和理解增强团队凝聚力。">
+        <label for="consideration-C">我通过同情和理解增强团队凝聚力。</label>
+    </div>
+    <div class="question">
+        <h3>和谐</h3>
+        <input type="radio" id="harmony-A" name="和谐" value="我寻求和维持团队和谐。">
+        <label for="harmony-A">我寻求和维持团队和谐。</label><br>
+        <input type="radio" id="harmony-B" name="和谐" value="我解决冲突，确保团队和谐。">
+        <label for="harmony-B">我解决冲突，确保团队和谐。</label><br>
+        <input type="radio" id="harmony-C" name="和谐" value="我创造一个无摩擦的工作环境，增加团队效率。">
+        <label for="harmony-C">我创造一个无摩擦的工作环境，增加团队效率。</label>
+    </div>
+    <div class="question">
+        <h3>包容</h3>
+        <input type="radio" id="inclusiveness-A" name="包容" value="我尊重多样性并包容差异。">
+        <label for="inclusiveness-A">我尊重多样性并包容差异。</label><br>
+        <input type="radio" id="inclusiveness-B" name="包容" value="我在团队中促进包容和多样性。">
+        <label for="inclusiveness-B">我在团队中促进包容和多样性。</label><br>
+        <input type="radio" id="inclusiveness-C" name="包容" value="我创造一个开放的环境，每个人都感到被欣赏和尊重。">
+        <label for="inclusiveness-C">我创造一个开放的环境，每个人都感到被欣赏和尊重。</label>
+    </div>
+    <div class="question">
+        <h3>个别</h3>
+        <input type="radio" id="individualization-A" name="个别" value="我认识到每个人的独特需求。">
+        <label for="individualization-A">我认识到每个人的独特需求。</label><br>
+        <input type="radio" id="individualization-B" name="个别" value="我对待每个人都根据其个性和需求。">
+        <label for="individualization-B">我对待每个人都根据其个性和需求。</label><br>
+        <input type="radio" id="individualization-C" name="个别" value="我提供个性化的支持，帮助每个人成功。">
+        <label for="individualization-C">我提供个性化的支持，帮助每个人成功。</label>
+    </div>
+    <div class="question">
+        <h3>积极</h3>
+        <input type="radio" id="positivity-A" name="积极" value="我总是以积极态度面对挑战。">
+        <label for="positivity-A">我总是以积极态度面对挑战。</label><br>
+        <input type="radio" id="positivity-B" name="积极" value="我用我的积极性影响和提振他人。">
+        <label for="positivity-B">我用我的积极性影响和提振他人。</label><br>
+        <input type="radio" id="positivity-C" name="积极" value="我创造积极的氛围，使团队保持动力和活力。">
+        <label for="positivity-C">我创造积极的氛围，使团队保持动力和活力。</label>
+    </div>
+    <div class="question">
+        <h3>交往</h3>
+        <input type="radio" id="socializing-A" name="交往" value="我喜欢与人交流和社交。">
+        <label for="socializing-A">我喜欢与人交流和社交。</label><br>
+        <input type="radio" id="socializing-B" name="交往" value="我通过社交活动建立广泛的人际网络。">
+        <label for="socializing-B">我通过社交活动建立广泛的人际网络。</label><br>
+        <input type="radio" id="socializing-C" name="交往" value="我利用我的社交技巧在职场和个人生活中建立关系。">
+        <label for="socializing-C">我利用我的社交技巧在职场和个人生活中建立关系。</label>
+    </div>
+    <!-- Repeat for other themes -->
+</form>
+<button onclick="submitForm()">完成</button>
+<p id="results"></p>
+<script>
+    function submitForm() {
+        const form = document.getElementById('strengthsForm');
+        const results = document.getElementById('results');
+        results.innerHTML = '<h2>你的优势评估报告如下：</h2>';
+        const inputs = form.getElementsByTagName('input');
+        for (let input of inputs) {
+            if (input.checked) {
+                results.innerHTML += `<p>- ${input.value}</p>`;
+            }
+        }
+    }
+</script>
+</body>
+</html>
